@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://bx-sicherheit.de/danke.html" />
+  <title>Vielen Dank – BX Sicherheit & Service</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="BX Sicherheit & Service" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="preload" href="assets/fonts/inter_5.2.8/webfonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter_5.2.8/webfonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bebas-neue_5.2.7/webfonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/icons/richtigesLogo.svg" class="logo-svg" alt="BX Sicherheit & Service" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- OVERLAY NAV -->
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-overlay-inner"><nav class="nav-overlay-links">
+      <a href="index.html" class="overlay-link">Home</a>
+      <a href="leistungen.html" class="overlay-link">Leistungen</a>
+      <a href="jobs.html" class="overlay-link">Jobs</a>
+      <a href="kontakt.html" class="overlay-link">Kontakt</a>
+    </nav></div>
+    <div class="nav-overlay-footer">
+      <a href="tel:+491741757400">+49 174 1757400</a>
+      <a href="mailto:info@bx-sicherheit.de">info@bx-sicherheit.de</a>
+    </div>
+  </div>
+
+  <!-- DANKE -->
+  <section class="page-hero" style="min-height: 70vh; display: flex; align-items: center;">
+    <div class="container" style="text-align: center;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 64px; height: 64px; color: #e2c06a; margin: 0 auto 24px;">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+        <polyline points="22 4 12 14.01 9 11.01"/>
+      </svg>
+      <h1 class="page-hero-title">Vielen Dank!</h1>
+      <p class="page-hero-sub">Ihre Nachricht wurde erfolgreich übermittelt.<br />Wir melden uns so schnell wie möglich bei Ihnen.</p>
+      <a href="index.html" class="btn btn-ghost-gold" style="margin-top: 32px;">Zurück zur Startseite</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html"><img src="assets/icons/richtigesLogo.svg" class="logo-svg" alt="BX Sicherheit & Service" /></a>
+          <p style="margin-top: 16px;">Professionelle Sicherheits- und<br />Eventdienstleistungen.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Seiten</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Rechtliches</h3>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Kontakt</h3>
+          <p><a href="tel:+491741757400">+49 174 1757400</a></p>
+          <p><a href="mailto:info@bx-sicherheit.de">info@bx-sicherheit.de</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> BX Sicherheit & Service. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://bx-sicherheit.de/kontakt.html" />
+  <title>Kontakt – BX Sicherheit & Service</title>
+  <meta name="description" content="Sicherheitsdienst anfragen – BX Sicherheit & Service aus Mutterstadt. Tätig im Rhein-Pfalz-Kreis, Rhein-Neckar-Kreis und der gesamten Metropolregion Rhein-Neckar." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="BX Sicherheit & Service" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BX Sicherheit & Service" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://bx-sicherheit.de/kontakt.html" />
+  <meta property="og:title" content="Kontakt – BX Sicherheit & Service" />
+  <meta property="og:description" content="Sicherheitsdienst anfragen – BX Sicherheit & Service aus Mutterstadt. Tätig im Rhein-Pfalz-Kreis, Rhein-Neckar-Kreis und der gesamten Metropolregion Rhein-Neckar." />
+  <meta property="og:image" content="https://bx-sicherheit.de/assets/images/og-image.jpg" />
+  <link rel="preload" href="assets/fonts/inter_5.2.8/webfonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter_5.2.8/webfonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bebas-neue_5.2.7/webfonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/icons/richtigesLogo.svg" class="logo-svg" alt="BX Sicherheit & Service" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- OVERLAY NAV -->
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-overlay-inner"><nav class="nav-overlay-links">
+      <a href="index.html" class="overlay-link">Home</a>
+      <a href="leistungen.html" class="overlay-link">Leistungen</a>
+      <a href="jobs.html" class="overlay-link">Jobs</a>
+      <a href="kontakt.html" class="overlay-link active">Kontakt</a>
+    </nav></div>
+    <div class="nav-overlay-footer">
+      <a href="tel:+491741757400">+49 174 1757400</a>
+      <a href="mailto:info@bx-sicherheit.de">info@bx-sicherheit.de</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Jetzt anfragen</p>
+      <h1 class="page-hero-title"><span class="gradient-text">Schreiben</span> Sie uns</h1>
+      <p class="page-hero-sub">
+        Sie haben eine Anfrage oder möchten ein Angebot? Füllen Sie das Formular aus –
+        wir melden uns schnellstmöglich bei Ihnen.
+      </p>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="kontakt-section">
+    <div class="container">
+      <div class="kontakt-a-grid reveal">
+
+        <div>
+          <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                action="/danke.html" id="kontaktForm">
+            <input type="hidden" name="form-name" value="kontakt" />
+            <p class="hidden"><label>Nicht ausfüllen: <input name="bot-field" /></label></p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="k-name">Name *</label>
+                <input type="text" id="k-name" name="name" required placeholder="Max Mustermann" />
+              </div>
+              <div class="form-group">
+                <label for="k-firma">Firma</label>
+                <input type="text" id="k-firma" name="firma" placeholder="Ihr Unternehmen (optional)" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="k-email">E-Mail *</label>
+                <input type="email" id="k-email" name="email" required placeholder="max@email.de" />
+              </div>
+              <div class="form-group">
+                <label for="k-telefon">Telefon</label>
+                <input type="tel" id="k-telefon" name="telefon" placeholder="+49 123 456789" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="k-nachricht">Ihre Nachricht *</label>
+              <textarea id="k-nachricht" name="nachricht" rows="6" required
+                placeholder="Beschreiben Sie kurz Ihr Anliegen, den gewünschten Einsatzzeitraum und ggf. die Örtlichkeit..."></textarea>
+            </div>
+
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="k-datenschutz" name="datenschutz" required />
+              <label for="k-datenschutz">
+                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>
+                gelesen und stimme der Verarbeitung meiner Daten zu. *
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Nachricht senden</button>
+          </form>
+
+          <div class="form-success" id="kontaktSuccess" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <h4>Nachricht gesendet!</h4>
+            <p>Vielen Dank! Wir melden uns so schnell wie möglich bei Ihnen.</p>
+          </div>
+        </div>
+
+        <div class="kontakt-info-box">
+          <h3 class="kontakt-info-title">Direktkontakt</h3>
+          <div class="kontakt-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6 6l.89-.89a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+            <div class="kontakt-info-text">
+              <strong>Telefon</strong>
+              <a href="tel:+491741757400">+49 174 1757400</a>
+            </div>
+          </div>
+          <div class="kontakt-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <div class="kontakt-info-text">
+              <strong>E-Mail</strong>
+              <a href="mailto:info@bx-sicherheit.de">info@bx-sicherheit.de</a>
+            </div>
+          </div>
+          <div class="kontakt-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div class="kontakt-info-text">
+              <strong>Reaktionszeit</strong>
+              <span>In der Regel innerhalb von 24 Stunden</span>
+            </div>
+          </div>
+          <p class="kontakt-info-note">Sie können uns auch direkt anrufen. Wir sind werktags erreichbar.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html"><img src="assets/icons/richtigesLogo.svg" class="logo-svg" alt="BX Sicherheit & Service" /></a>
+          <p style="margin-top: 16px;">Professionelle Sicherheits- und<br />Eventdienstleistungen.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Seiten</h3>
+          <ul>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Rechtliches</h3>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Kontakt</h3>
+          <p><a href="tel:+491741757400">+49 174 1757400</a></p>
+          <p><a href="mailto:info@bx-sicherheit.de">info@bx-sicherheit.de</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> BX Sicherheit & Service. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
+
+
